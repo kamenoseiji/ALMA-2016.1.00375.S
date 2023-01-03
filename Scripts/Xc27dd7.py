@@ -1,5 +1,4 @@
 prefix = 'uid___A002_Xc27dd7_X2e85'
-'''
 os.system('rm -rf ' + prefix + '_flagonline.txt')
 importasdm(prefix)
 plotants(vis=prefix + '.ms', figfile=prefix + '_plotants.png') #REFANT = DA41
@@ -9,14 +8,12 @@ listobs(vis=prefix + '.ms', listfile=prefix + '.listobs')
 #  0    none J0238+1636          02:38:38.930100 +16.36.59.27500 ICRS    0        7136072
 #  1    none J0243-0550          02:43:12.469466 -05.50.55.29615 ICRS    1        3323086
 #  2    none NGC_1052            02:41:04.798510 -08.15.20.75170 ICRS    2       28480670
-'''
 BPCAL = 'J0238+1636'
 PHCAL = 'J0243-0550'
 TARGET= 'NGC_1052'
 REFANT = 'DA41'
 msfile = prefix + '.ms'
 calMS = prefix + '.cal.ms'
-'''
 flagdata(vis=prefix+'.ms', mode='manual', spw='5~32', autocorr=True, flagbackup=False)
 flagmanager(vis=prefix+'.ms', mode='save', versionname='Apriori')
 #-------- Tsys and WVR calibration table generation
@@ -137,4 +134,3 @@ imview(TARGET + '_SPW0.image')
 imview(TARGET + '_SPW1.image')
 imview(TARGET + '_SPW2.image')
 imview(TARGET + '_SPW3.image')
-'''

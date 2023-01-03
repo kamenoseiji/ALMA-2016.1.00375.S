@@ -1,10 +1,8 @@
 prefix = 'uid___A002_Xc2bb44_X1baf'
 os.system('rm -rf ' + prefix + '_flagonline.txt')
-'''
 importasdm(prefix)
 plotants( vis=prefix + '.ms', figfile=prefix + '_plotants.png') #REFANT = DA49
 listobs(vis=prefix + '.ms', listfile=prefix + '.listobs')
-'''
 #Fields: 4
 #  ID   Code Name                RA               Decl           Epoch   SrcId      nRows
 #  0    none J0238+1636          02:38:38.930100 +16.36.59.27500 ICRS    0        7346205
@@ -19,7 +17,6 @@ REFANT = 'DA53'
 msfile = prefix + '.ms'
 calMS = prefix + '.cal.ms'
 gcalMS = prefix + '.gcal.ms'
-'''
 flagdata(vis=prefix+'.ms', mode='manual', spw='5~32', autocorr=True, flagbackup=False)
 flagmanager(vis=prefix+'.ms', mode='save', versionname='Apriori')
 #-------- Tsys and WVR calibration table generation
@@ -155,4 +152,3 @@ imview(TARGET + '_SPW0.image')
 imview(TARGET + '_SPW1.image')
 imview(TARGET + '_SPW2.image')
 imview(TARGET + '_SPW3.image')
-'''
