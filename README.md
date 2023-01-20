@@ -1,5 +1,5 @@
 # ALMA-2016.1.00375.S
-Data reduction process and results from ALMA 2016.1.00375.S
+Data reduction process and results from ALMA 2016.1.00375.S. The paper is accepted for publication in The Astrophysical Journal. The preprint is presented in https://arxiv.org/abs/2301.07273
 
 Scripts/
 	Xc2bb44.py : CASA calibration and imaging script for Band-3 observation (ExecBlock UID uid://A002/Xc2bb44/X1baf)
